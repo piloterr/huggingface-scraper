@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "google-bert/bert-base-uncased",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -213,7 +213,7 @@ response = requests.get(
     params={
         "query": "bert",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
